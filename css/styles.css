@@ -1,0 +1,316 @@
+/* Color Scheme - Analogous Blue to Green
+   Primary: #2E5266 (dark blue-green)
+   Secondary: #4A90A4 (teal)
+   Accent: #83C5BE (light teal)
+   Light: #E9F7F5 (very light teal)
+   Text: #1A1A1A (dark gray)
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 0.75rem;
+    line-height: 1.5;
+    color: #1A1A1A;
+    background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    margin-bottom: 1rem;
+}
+
+/* Header Styles */
+.header {
+    background-color: #2E5266;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.nav-bar {
+    margin-bottom: 1rem;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    background-color: #4A90A4;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+    display: block;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    background-color: #83C5BE;
+    color: #2E5266;
+}
+
+.masthead {
+    background-image: linear-gradient(rgba(46, 82, 102, 0.7), rgba(46, 82, 102, 0.7)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 400"><defs><linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%"><stop offset="0%" style="stop-color:%234A90A4;stop-opacity:1" /><stop offset="100%" style="stop-color:%2383C5BE;stop-opacity:1" /></linearGradient></defs><rect width="1200" height="400" fill="url(%23grad)"/><circle cx="200" cy="100" r="50" fill="white" opacity="0.1"/><circle cx="800" cy="200" r="30" fill="white" opacity="0.15"/><circle cx="1000" cy="150" r="40" fill="white" opacity="0.1"/></svg>');
+    background-size: cover;
+    background-position: center;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.tagline {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+/* Main Content Styles */
+.main-content {
+    background-color: #E9F7F5;
+    min-height: 60vh;
+    padding: 2rem 0;
+}
+
+.content-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.article {
+    background-color: white;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(46, 82, 102, 0.1);
+}
+
+.article h2 {
+    color: #2E5266;
+    margin-bottom: 1rem;
+}
+
+.article figure {
+    margin-bottom: 1rem;
+}
+
+.article img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.article figcaption {
+    font-style: italic;
+    color: #666;
+    margin-top: 0.5rem;
+    font-size: 0.9em;
+}
+
+.article p {
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+/* Portfolio Styles */
+.portfolio-section h2 {
+    color: #2E5266;
+    text-align: center;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.portfolio-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+
+.portfolio-card {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 10px rgba(46, 82, 102, 0.1);
+    transition: transform 0.3s;
+}
+
+.portfolio-card:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.portfolio-card h3 {
+    padding: 1rem;
+    color: #2E5266;
+    text-align: center;
+    font-size: 1rem;
+}
+
+/* Footer Styles */
+.footer {
+    background-color: #2E5266;
+    color: white;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.social-links a {
+    color: white;
+    font-size: 1.5rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #83C5BE;
+}
+
+.company-info p {
+    margin-bottom: 0.5rem;
+}
+
+.copyright {
+    margin-top: 1rem;
+    font-size: 0.8rem;
+    opacity: 0.8;
+}
+
+/* Loading indicator */
+.loading {
+    text-align: center;
+    padding: 2rem;
+    color: #4A90A4;
+}
+
+.loading::after {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 3px solid #83C5BE;
+    border-radius: 50%;
+    border-top-color: #4A90A4;
+    animation: spin 1s ease-in-out infinite;
+    margin-left: 10px;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Tablet Styles */
+@media (min-width: 35rem) {
+    body {
+        font-size: 1rem;
+    }
+    
+    .nav-links {
+        flex-direction: row;
+        justify-content: center;
+    }
+    
+    .article-content {
+        display: flex;
+        align-items: flex-start;
+        gap: 1.5rem;
+    }
+    
+    .article-image {
+        flex: 0 0 40%;
+    }
+    
+    .article-text {
+        flex: 1;
+    }
+    
+    .portfolio-grid {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    
+    .portfolio-card {
+        flex: 0 0 calc(50% - 0.75rem);
+    }
+}
+
+/* Desktop Styles */
+@media (min-width: 80rem) {
+    body {
+        font-size: 1.25rem;
+    }
+    
+    .container,
+    .content-container,
+    .footer-content {
+        text-align: left;
+    }
+    
+    .header {
+        text-align: left;
+    }
+    
+    .logo {
+        text-align: center;
+    }
+    
+    .nav-bar {
+        text-align: center;
+    }
+    
+    .masthead {
+        text-align: center;
+    }
+    
+    .portfolio-grid {
+        justify-content: space-between;
+    }
+    
+    .portfolio-card {
+        flex: 0 0 calc(33.333% - 1rem);
+    }
+    
+    .footer {
+        text-align: center;
+    }
+}
